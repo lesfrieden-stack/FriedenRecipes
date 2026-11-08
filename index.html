@@ -1247,6 +1247,12 @@
             padding: 0.8rem 1rem;
             border-radius: 0 8px 8px 0;
         }
+   @media print {
+  /* Hide things you don't want on paper */
+  header, nav, footer, aside, button,
+  .no-print, .sidebar, .search, .controls {
+    display: none !important;
+  }
     </style>
 </head>
 <body>
